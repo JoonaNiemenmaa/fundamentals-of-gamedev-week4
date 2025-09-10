@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=4 uid="uid://dddxdybscivmc"]
+
+[ext_resource type="Texture2D" uid="uid://dafoot36615og" path="res://Assets/Textures/Sheets/tilemap.png" id="1_vly50"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lyd6k"]
+texture = ExtResource("1_vly50")
+separation = Vector2i(1, 1)
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_y4dr7"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_lyd6k")
+
+[node name="Level1" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD8/wAAAAABAAAAAAD9/wAAAAACAAAAAAD+/wAAAAACAAAAAAD//wAAAAACAAAAAAAAAAAAAAACAAAAAAABAAAAAAACAAAAAAACAAAAAAACAAAAAAADAAAAAAADAAAAAAAFAP7/AAABAAAAAAAGAP7/AAACAAAAAAAHAP7/AAACAAAAAAAIAP7/AAACAAAAAAAJAP7/AAACAAAAAAAKAP7/AAACAAAAAAALAP7/AAADAAAAAAACAPz/AAADAAAAAAABAPz/AAACAAAAAAAAAPz/AAACAAAAAAD///z/AAABAAAAAAAIAPz/AAAAAAAAAAALAPz/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_y4dr7")
